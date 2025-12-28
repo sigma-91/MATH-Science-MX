@@ -1,0 +1,3036 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATH Science MX</title>
+  <link rel="website icon" type="png" href="img/MATH Science.png" />
+
+  <link rel="stylesheet" href="iniciales.css">
+  <link rel="stylesheet" href="../SigMATH.css">
+  <link rel="icon" type="image/png" href="img/MATH Science.png">
+
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  body {
+  font-family: "Poppins",
+      sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+  }
+  
+  .logo {
+    
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .titulo {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 15px;
+  }
+  
+  .intro {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .concept-card {
+    background-color: #e0f7fa;
+    border-left: 6px solid #00b4d8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: justify;
+  }
+  
+  footer {
+    background-color: #03045e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  nav ul li a.active {
+    color: white; 
+    font-weight: bold;
+  }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      background-color: cyan;
+      color: black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      font-size: 1.5rem;
+    }
+  
+    .scroll-top:hover {
+      background-color: blue;
+      transform: translateY(-5px);
+    }
+  
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 30px;
+      }
+    }
+
+       
+       
+    
+        .card {
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+    
+        .card-header {
+          padding-bottom: 15px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #eee;
+        }
+    
+        .btn {
+          display: inline-block;
+          padding: 10px 15px;
+          background-color: var(--primary-color);
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          text-decoration: none;
+          transition: background-color 0.3s;
+        }
+    
+        .btn:hover {
+          background-color: #2980b9;
+        }
+    
+        .btn-success {
+          background-color: var(--secondary-color);
+        }
+    
+        .btn-success:hover {
+          background-color: #1d0bc2;
+        }
+    
+        .form-group {
+          margin-bottom: 20px;
+        }
+    
+        .form-group label {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: 500;
+        }
+    
+        .form-control {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+    
+        .container {
+          max-width: 900px;
+          margin: auto;
+          padding: 20px;
+        }
+    
+        .titulo {
+          text-align: center;
+          color: #0077b6;
+          margin-bottom: 15px;
+        }
+    
+        .intro {
+          text-align: center;
+          font-size: 1rem;
+          margin-bottom: 20px;
+        }
+    
+        .concept-card {
+          background-color: #e0f7fa;
+          border-left: 6px solid #00b4d8;
+          border-radius: 8px;
+          padding: 20px;
+          margin-bottom: 25px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          text-align: justify;
+        }
+    
+        footer {
+          background-color: #03045e;
+          color: white;
+          padding: 20px;
+          text-align: center;
+        }
+    
+        nav ul li a.active {
+          color: white;
+          font-weight: bold;
+        }
+    
+        .container-ciencia {
+          max-width: 1200px;
+          margin: 0 auto;
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          padding: 30px;
+        }
+    
+        h1 {
+          color: #333;
+          margin-bottom: 10px;
+          font-size: 28px;
+        }
+    
+        h2 {
+          color: #0a3d62;
+          /* Azul marino */
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+    
+        .category-title {
+          background-color: #e6f2ff;
+          padding: 10px 15px;
+          margin: 20px 0 15px 0;
+          border-radius: 5px;
+          color: #0a3d62;
+          font-weight: bold;
+          font-size: 18px;
+        }
+    
+        .concept-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 20px;
+        }
+    
+        .concept-box {
+          background-color: #f9f9f9;
+          border-left: 5px solid #0a3d62;
+          padding: 15px;
+          border-radius: 5px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        }
+    
+        .concept-title {
+          color: #0a3d62;
+          font-weight: bold;
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-family: "Poppins",
+            sans-serif;
+        }
+    
+        .concept-content {
+          width: 100%;
+          min-height: 120px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 10px;
+          font-size: 14px;
+          line-height: 1.5;
+          background-color: white;
+          resize: vertical;
+          font-family: "Poppins", sans-serif;
+        }
+    
+    
+        @media (max-width: 768px) {
+          .concept-grid {
+            grid-template-columns: 1fr;
+          } }
+          
+                    :root {
+                      --primary-color: #3498db;
+                      --secondary-color: #2c3e50;
+                      --accent-color: #e74c3c;
+                      --light-color: #ecf0f1;
+                      --dark-color: #2c3e50;
+                    }
+          
+                    
+          
+                    .section-card {
+                      background: white;
+                      border-radius: 10px;
+                      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                      padding: 1.5rem;
+                      margin-bottom: 2rem;
+                      transition: all 0.3s ease;
+                    }
+          
+                    .section-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                    }
+          
+                    .section-card h2 {
+                      color: var(--secondary-color);
+                      font-weight: 600;
+                      font-size: 1.8rem;
+                      margin-bottom: 1.5rem;
+                      padding-bottom: 0.5rem;
+                      border-bottom: 2px solid var(--primary-color);
+                    }
+          
+                    .collapsible-section {
+                      margin-bottom: 1rem;
+                      border: 1px solid rgba(0, 0, 0, 0.125);
+                      border-radius: 8px;
+                      overflow: hidden;
+                    }
+          
+                    .section-header {
+                      background-color: rgba(52, 152, 219, 0.1);
+                      padding: 1rem;
+                      cursor: pointer;
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      font-weight: 500;
+                      transition: background-color 0.3s ease;
+                    }
+          
+                    .section-header:hover {
+                      background-color: rgba(52, 152, 219, 0.2);
+                    }
+          
+                    .section-header i {
+                      transition: transform 0.3s ease;
+                    }
+          
+                    .section-content {
+                      padding: 1rem;
+                      display: none;
+                      border-top: 1px solid rgba(0, 0, 0, 0.125);
+                    }
+          
+                    .section-content.active {
+                      display: block;
+                    }
+          
+                    .section-header.active i {
+                      transform: rotate(180deg);
+                    }
+          
+                    .concept-box {
+                      background: #f8f9fa;
+                      border-left: 4px solid var(--primary-color);
+                      padding: 1rem;
+                      margin-bottom: 1rem;
+                      border-radius: 0 8px 8px 0;
+                    }
+          
+                    .concept-box h4 {
+                      color: var(--primary-color);
+                      margin-bottom: 0.5rem;
+                      font-weight: 600;
+                    }
+          
+                    .example-box {
+                      background: rgba(231, 76, 60, 0.1);
+                      border: 1px dashed var(--accent-color);
+                      padding: 1rem;
+                      margin-top: 1rem;
+                      border-radius: 8px;
+                    }
+          
+                    .example-box h5 {
+                      color: var(--accent-color);
+                      margin-bottom: 0.5rem;
+                      font-weight: 500;
+                    }
+          
+                    .greek-grid {
+                      display: grid;
+                      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                      gap: 1rem;
+                    }
+          
+                    .greek-letter {
+                      background: white;
+                      border-radius: 8px;
+                      padding: 1rem;
+                      text-align: center;
+                      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                    }
+          
+                    .greek-letter .symbol {
+                      font-size: 2rem;
+                      color: var(--secondary-color);
+                      margin-bottom: 0.5rem;
+                    }
+          
+                    .truth-table {
+                      width: 100%;
+                      border-collapse: collapse;
+                      margin: 1rem 0;
+                    }
+          
+                    .truth-table th,
+                    .truth-table td {
+                      border: 1px solid #ddd;
+                      padding: 0.5rem;
+                      text-align: center;
+                    }
+          
+                    .truth-table th {
+                      background-color: var(--primary-color);
+                      color: white;
+                    }
+          
+                    .truth-table tr:nth-child(even) {
+                      background-color: #f2f2f2;
+                    }
+          
+                    @media (max-width: 768px) {
+                      .header {
+                        padding: 3rem 0;
+                      }
+          
+                      .section-card h2 {
+                        font-size: 1.5rem;
+                      }
+          
+                      .greek-grid {
+                        grid-template-columns: repeat(3, 1fr);
+                      }
+                    }
+          
+                    @media (max-width: 576px) {
+                      .greek-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                      }
+                    }
+          
+                    footer {
+                      background-color: var(--secondary-color);
+                      color: white;
+                      padding: 2rem 0;
+                      text-align: center;
+                      margin-top: 3rem;
+                    }
+
+                                        .container_famosos {
+                                          max-width: 1200px;
+                                          margin: 0 auto;
+                                          padding: 2rem;
+                                        }
+                    
+                                        .timeline {
+                                          position: relative;
+                                          padding: 2rem 0;
+                                        }
+                    
+                                        .timeline::before {
+                                          content: '';
+                                          position: absolute;
+                                          top: 0;
+                                          left: 50%;
+                                          transform: translateX(-50%);
+                                          width: 4px;
+                                          height: 100%;
+                                          background-color: cyan;
+                                        }
+                    
+                                        .mathematician {
+                                          position: relative;
+                                          margin-bottom: 3rem;
+                                          width: 100%;
+                                          display: flex;
+                                          flex-direction: column;
+                                        }
+                    
+                                        .mathematician-content {
+                                          position: relative;
+                                          width: 45%;
+                                          padding: 1.5rem;
+                                          background-color: white;
+                                          border-radius: 10px;
+                                          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                                          transition: transform 0.3s ease;
+                                        }
+                    
+                                        .mathematician-content:hover {
+                                          transform: translateY(-5px);
+                                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+                                        }
+                    
+                                        .mathematician:nth-child(odd) {
+                                          align-items: flex-start;
+                                        }
+                    
+                                        .mathematician:nth-child(even) {
+                                          align-items: flex-end;
+                                        }
+                    
+                                        .mathematician-img {
+                                          width: 150px;
+                                          height: 150px;
+                                          border-radius: 50%;
+                                          object-fit: cover;
+                                          border: 4px solid cyan;
+                                          margin: 0 auto 1rem;
+                                          display: block;
+                                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                        }
+                    
+                                        h2 {
+                                          color: var(--dark-cyan);
+                                          margin-bottom: 0.5rem;
+                                          text-align: center;
+                                        }
+                    
+                                        .era {
+                                          display: block;
+                                          color: var(--accent);
+                                          text-align: center;
+                                          font-style: italic;
+                                          margin-bottom: 1rem;
+                                        }
+                    
+                                        .contributions {
+                                          margin-top: 1rem;
+                                        }
+                    
+                                        .contributions h3 {
+                                          color: blue;
+                                          margin-bottom: 0.5rem;
+                                          font-size: 1.1rem;
+                                        }
+                    
+                                        .formula-container {
+                                          background-color: cyan;
+                                          padding: 1rem;
+                                          border-radius: 8px;
+                                          margin: 1rem 0;
+                                        }
+                    
+                                        .formula-title {
+                                          font-weight: 600;
+                                          margin-bottom: 0.5rem;
+                                          display: block;
+                                        }
+
+    :root {
+      --primary: #03045e;
+      --secondary: blue;
+      --accent: #f05252;
+      --light: #f3f4f6;
+      --dark: #111827;
+      --success: #0e9f6e;
+      --warning: #ff5a1f;
+      --gray-100: #f9fafb;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-800: #1f2937;
+      --transition: all 0.3s ease;
+    }
+  
+    .sigma {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 7rem;
+    }
+  
+    .sig {
+      color: cyan;
+    }
+  
+    section {
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark);
+      background-color: var(--light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+  
+    /* Header y navegación */
+    header {
+      font-family: 'Poppins', sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+  
+    .container {
+      font-family: 'Poppins', sans-serif;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  
+    .navbar {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+  
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+  
+    .marquee-container {
+      background-color: #03045e;
+      color: whitesmoke;
+      padding: 0.5rem 0;
+      overflow: hidden;
+    }
+  
+    .logo img {
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+  
+    .logo h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+  
+    .nav-links li {
+      margin-left: 1.5rem;
+    }
+  
+    .nav-links a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      padding: 0.5rem 0;
+      transition: var(--transition);
+    }
+  
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+  
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary);
+      transition: var(--transition);
+    }
+  
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+  
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--dark);
+    }
+  
+    /* Banner principal */
+    .hero {
+      margin-top: 76px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+  
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0;
+      animation: fadeIn 1s ease 0.3s forwards;
+    }
+  
+    .hero .btn {
+      opacity: 0;
+      animation: fadeIn 1s ease 0.6s forwards;
+    }
+  
+    .typed-text {
+      font-weight: 600;
+      color: #fff;
+    }
+  
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url('https://cdn.pixabay.com/photo/2017/03/10/22/48/abstract-2134823_1280.png');
+      background-size: 1000px 100px;
+    }
+  
+    /* Botones */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+  
+    .btn-primary {
+      background-color: white;
+      color: var(--primary);
+    }
+  
+    .btn-primary:hover {
+      background-color: var(--gray-100);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    .btn-secondary {
+      background-color: var(--secondary);
+      color: white;
+    }
+  
+    .btn-secondary:hover {
+      background-color: #6929d0;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid var(--gray-300);
+      color: var(--dark);
+    }
+  
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+  
+    /* Sección de tarjetas temáticas */
+    .section {
+      padding: 5rem 0;
+    }
+  
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  
+    .section-header h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+  
+    .section-header p {
+      color: var(--gray-500);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+  
+    .card {
+      background-color: white;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+    }
+  
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    .card-img {
+      height: 200px;
+      overflow: hidden;
+    }
+  
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+  
+    .card:hover .card-img img {
+      transform: scale(1.05);
+    }
+  
+    .card-content {
+      padding: 1.5rem;
+    }
+  
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+      color: var(--dark);
+    }
+  
+    .card-content p {
+      color: var(--gray-500);
+      margin-bottom: 1.5rem;
+    }
+  
+    .greek {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    .math-formula {
+      background-color: var(--gray-100);
+      padding: 1rem;
+      border-radius: 0.375rem;
+      margin: 1rem 0;
+      overflow-x: auto;
+    }
+  
+    /* Encuestas */
+    .survey-preview {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+  
+    .survey-preview h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: var(--dark);
+    }
+  
+    .survey-preview p {
+      margin-bottom: 1.5rem;
+      color: var(--gray-500);
+    }
+  
+    .progress-container {
+      width: 100%;
+      background-color: var(--gray-200);
+      border-radius: 1rem;
+      height: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .progress-bar {
+      height: 100%;
+      border-radius: 1rem;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      transition: width 1s ease;
+    }
+  
+    /* Libros recomendados */
+    .books-container {
+      margin-top: 2rem;
+    }
+  
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+  
+    .book-card {
+      background-color: white;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    .book-info {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .book-info h4 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+  
+    .book-info p {
+      color: var(--gray-500);
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .book-info .book-rating {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+    }
+  
+    .book-info .stars {
+      color: #ffc107;
+      margin-right: 0.5rem;
+    }
+  
+    .recommended {
+      border-top: 4px solid var(--success);
+    }
+  
+    .not-recommended {
+      border-top: 4px solid var(--accent);
+    }
+  
+    /* Cajas de información */
+    .info-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+  
+    .info-box {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    .info-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--primary), var(--secondary));
+    }
+  
+    .info-box-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+  
+    .info-box h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+  
+    .info-box p {
+      color: var(--gray-500);
+      margin-bottom: 1rem;
+    }
+  
+    /* Línea del tiempo */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+  
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: var(--gray-300);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+  
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+  
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      right: -12px;
+      background-color: white;
+      border: 4px solid var(--primary);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  
+    .left {
+      left: 0;
+    }
+  
+    .right {
+      left: 50%;
+    }
+  
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid var(--gray-300);
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent white;
+    }
+  
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid var(--gray-300);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    .right::after {
+      left: -12px;
+    }
+  
+    .timeline-content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .timeline-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .timeline-content p {
+      color: var(--gray-500);
+      margin-bottom: 0.5rem;
+    }
+  
+    .timeline-date {
+      color: var(--primary);
+      font-weight: 600;
+    }
+  
+    /* Footer */
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 4rem 0 2rem;
+    }
+  
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .footer-logo img {
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+  
+    .footer-logo h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+    }
+  
+    .footer-section h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-weight: 600;
+    }
+  
+    .footer-section h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+  
+    .footer-links {
+      list-style: none;
+    }
+  
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+  
+    .footer-links a {
+      color: var(--gray-400);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+  
+    .footer-links a:hover {
+      color: white;
+    }
+  
+    .footer-social {
+      display: flex;
+      margin-top: 1.5rem;
+    }
+  
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      margin-right: 0.75rem;
+      transition: var(--transition);
+    }
+  
+    .footer-social a:hover {
+      background-color: var(--primary);
+      transform: translateY(-3px);
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--gray-400);
+      font-size: 0.875rem;
+    }
+  
+    /* Botón scroll to top */
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+  
+    .scroll-top.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .scroll-top:hover {
+      background-color: var(--secondary);
+      transform: translateY(-5px);
+    }
+  
+    /* Animaciones */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    /* Responsive */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+      }
+  
+      .nav-links.show {
+        display: flex;
+      }
+  
+      .nav-links li {
+        margin: 0.5rem 1.5rem;
+      }
+  
+      .hamburger {
+        display: block;
+      }
+  
+      .timeline::after {
+        left: 31px;
+      }
+  
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+  
+      .timeline-item::before {
+        left: 60px;
+        border: medium solid var(--gray-300);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+  
+      .left::after,
+      .right::after {
+        left: 19px;
+      }
+  
+      .right {
+        left: 0%;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+  
+      .hero p {
+        font-size: 1rem;
+      }
+  
+      .section-header h2 {
+        font-size: 1.75rem;
+      }
+  
+      .section {
+        padding: 3rem 0;
+      }
+  
+      .info-boxes {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .hero {
+        padding: 3rem 0;
+      }
+  
+      .hero h2 {
+        font-size: 1.75rem;
+      }
+  
+      .section-header h2 {
+        font-size: 1.5rem;
+      }
+  
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+  
+      .book-list {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      }
+  
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .info-box ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 1.5rem;
+    }
+  
+    .info-box ul li {
+      margin-bottom: 1rem;
+    }
+  
+    .info-box ul li:last-child {
+      margin-bottom: 0;
+    }
+  
+    /* Add styles for .survey-sample containers */
+    .survey-sample {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background-color: var(--gray-100);
+      border-radius: 0.5rem;
+    }
+  
+    .survey-sample h3 {
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+  
+    .survey-sample form>div {
+      margin-bottom: 1.5rem;
+    }
+  
+    .survey-sample label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  
+    .survey-sample p[style*="font-weight: 600"] {
+      font-weight: 600;
+    }
+  
+    .survey-sample textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--gray-300);
+      border-radius: 4px;
+    }
+</style>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+  
+          <h1 class="sigma">Σ</h1>
+          <h1 class="sig">MATH</h1>
+          <h1 class="MATH">Science MX</h1>
+        </div>
+        <ul class="nav-links">
+          
+          <li><a href="https://sigma-91.github.io/PhysicMATH-MX/">PhysicMATH MX</a></li>
+          <li><a href="https://sigma-91.github.io/Mathematik-Bibliothek-MX/">Mathematik Bibliothek MX</a></li>
+        </ul>
+        <button class="hamburger" id="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Banner Principal -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Descubre lo que es la ciencia matematica <span class="typed-text" id="typed-element"></span></h2>
+      <p>Las matemáticas son una disciplina académica que estudia conceptos como la cantidad, la estructura, el espacio
+        y el cambio. A través del razonamiento abstracto y la lógica, las matemáticas han evolucionado a lo largo de
+        miles de años para convertirse en una herramienta fundamental para entender el universo.</p>
+    </div>
+    <div class="wave"></div>
+  </section>
+
+  
+    <main class="container">
+      <div class="section-card">
+        
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Clasificación de las Matemáticas</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>Las matemáticas pueden clasificarse en diversas áreas fundamentales:</p>
+            <ul>
+              <li><strong>Aritmética:</strong> Estudio de los números y las operaciones básicas entre ellos.</li>
+              <li><strong>Álgebra:</strong> Estudio de las estructuras matemáticas, relaciones y cantidades.</li>
+              <li><strong>Geometría:</strong> Estudio de las propiedades y relaciones de figuras en el espacio.</li>
+              <li><strong>Cálculo:</strong> Estudio del cambio continuo y el movimiento mediante derivadas e integrales.
+              </li>
+              <li><strong>Estadística:</strong> Recopilación, análisis, interpretación y presentación de datos.</li>
+              <li><strong>Probabilidad:</strong> Estudio de los fenómenos aleatorios y la cuantificación de la
+                incertidumbre.</li>
+              <li><strong>Topología:</strong> Estudio de las propiedades que se conservan bajo deformaciones continuas.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Historia de las Matemáticas</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>La historia de las matemáticas es el relato del desarrollo gradual del pensamiento matemático a través del tiempo y de
+            distintas civilizaciones. No nació de la noche a la mañana ni en un solo lugar, sino que fue evolucionando gracias a las
+            necesidades prácticas y al deseo de comprender el mundo de forma más precisa.</p>
+            <h2>1. Matemáticas egipcias</h2>
+            <p>Los egipcios fueron uno de los primeros pueblos en usar las matemáticas de manera organizada. Vivían junto al río Nilo,
+            y necesitaban medir sus tierras cada vez que el río se desbordaba, lo que dio origen a técnicas básicas de geometría .
+            También usaron matemáticas para construir pirámides, administrar impuestos y llevar registros del tiempo. Usaban un
+            sistema numérico basado en el número 10, aunque no tenían un símbolo para el cero.</p>
+            <h2>2. Matemáticas mesopotámicas (babilónicas)</h2>
+            <p>En Mesopotamia, los babilonios desarrollaron un sistema numérico avanzado basado en el número 60 , que todavía usamos
+            hoy para medir el tiempo y los ángulos. Sabían resolver ecuaciones cuadráticas, trabajaban con fracciones y tenían
+            tablas matemáticas muy precisas. Sus conocimientos también incluyeron astronomía y cálculos relacionados con eclipses.</p>
+            <h2>3. Matemáticas griegas</h2>
+            <p>Los griegos transformaron las matemáticas de una herramienta práctica a una disciplina lógica y abstracta. Personajes
+            como Tales de Mileto , Pitágoras , Euclides , Arquímedes y Apolonio sentaron las bases de la geometría, la teoría de
+            números y el método deductivo. Euclides, por ejemplo, escribió Los Elementos , un libro fundamental que estableció
+            reglas lógicas para la geometría durante más de dos mil años. Arquímedes calculó aproximaciones del número π y
+            desarrolló ideas precursoras del cálculo integral.</p>
+            <h2>4. Matemáticas romanas</h2>
+            <p>Los romanos , aunque no aportaron mucho en cuanto a teoría matemática, sí las usaron mucho en la práctica: construcción
+            de carreteras, acueductos, edificios y organización militar. Su sistema numérico (números romanos) era útil pero poco
+            práctico para cálculos complejos. Roma no fomentó tanto el pensamiento abstracto como los griegos, sino más bien
+            aplicaciones ingenieriles.</p>
+            <h2>5. Matemáticas mayas</h2>
+            <p>La civilización maya en Mesoamérica tuvo un avance sorprendente. Desarrollaron un sistema numérico posicional con base
+            20 y fueron uno de los pocos pueblos antiguos en usar el concepto del cero , algo crucial para el desarrollo matemático.
+            Además, usaban las matemáticas para hacer cálculos astronómicos muy precisos, lo cual les permitió crear calendarios
+            extremadamente exactos.</p>
+            <h2>6. Otras civilizaciones importantes</h2>
+            <ul>
+              <li>Indias : Desarrollaron el sistema decimal y el concepto del cero tal como lo conocemos hoy, además de contribuciones en
+              álgebra y trigonometría.</li>
+              <li>Chinas : Avanzaron en sistemas de numeración, matrices, ecuaciones algebraicas y teoremas geométricos.</li>
+              <li>Árabes : Fueron fundamentales en preservar y expandir el conocimiento griego, indio y babilónico. Introdujeron el
+              álgebra como disciplina formal y difundieron el sistema numérico hindú-arábigo que usamos ahora.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Matematicos Importantes</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>La historia de las matemáticas está llena de personajes clave que, a lo largo de los siglos, han contribuido al
+            desarrollo de esta disciplina.</p>
+           
+            <div class="container_famosos">
+              <h2>"Matematicos mas Importantes de la Historia"</h2>
+              <div class="timeline">
+                <!-- Pitágoras de Samos -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/pitagoras_de_samos.jpg" alt="Pitágoras de Samos" class="mathematician-img">
+                    <h2>Pitágoras de Samos</h2>
+                    <p>570-495 a.C.</p>
+                    <span class="era">Matemático de la Antigua Grecia</span>
+                    <p>Filósofo y matemático griego famoso por el teorema que lleva su nombre, además de fundador de la
+                      hermandad pitagórica y llamado tambien el matematico puro.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Teorema de Pitágoras</li>
+                        <li>Estudio de proporciones musicales</li>
+                        <li>Descubrimiento de números irracionales</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Teorema de Pitágoras:</span>
+                        <p>En un triángulo rectángulo, la suma de de los cuadrados de los catetos es igual al cuadrado de la
+                          hipotenusa.</p>
+                        <div>
+                          \[ a^2 + b^2 = c^2 \]
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Thales de Mileto -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/thales.jpg" alt="Thales de Mileto" class="mathematician-img">
+                    <h2>Thales de Mileto</h2>
+                    <p>624-546 a.C.</p>
+                    <span class="era">Matemático de la Antigua Grecia</span>
+                    <p>Considerado uno de los Siete Sabios de Grecia y el primer matemático occidental. Fue pionero en la
+                      aplicación de métodos deductivos en geometría.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Teorema de Thales</li>
+                        <li>Medición de la altura de las pirámides mediante sombras</li>
+                        <li>Introducción de la demostración matemática</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Teorema de Thales:</span>
+                        <p>Si dos rectas son cortadas por varias rectas paralelas, los segmentos determinados en una de
+                          las rectas son proporcionales a los correspondientes en la otra.</p>
+                        <div>
+                          \[ \frac{AB}{A'B'} = \frac{BC}{B'C'} = \frac{AC}{A'C'} \]
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Euclides -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/euclides.jpg" alt="Euclides" class="mathematician-img">
+                    <h2>Euclides</h2>
+                    <p>325-265 a.C.</p>
+                    <span class="era">Matemático de la Antigua Grecia</span>
+                    <p>Conocido como el "Padre de la Geometría". Su obra "Los Elementos" es uno de los libros de texto más
+                      influyentes en la historia de las matemáticas.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Los Elementos (13 libros sobre geometría, teoría de números y álgebra)</li>
+                        <li>Axiomas y postulados de la geometría euclidiana</li>
+                        <li>Algoritmo de Euclides para el máximo común divisor</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Quinto Postulado de Euclides:</span>
+                        <p>Por un punto exterior a una recta, se puede trazar una única paralela a dicha recta.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Arquímedes -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/arquimedes.jpg" alt="Arquímedes" class="mathematician-img">
+                    <h2>Arquímedes</h2>
+                    <p>287-212 a.C.</p>
+                    <span class="era">Matemático de la Antigua Grecia</span>
+                    <p>Considerado uno de los científicos más importantes de la antigüedad clásica. Sus contribuciones
+                      abarcan la física, ingeniería y matemáticas.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Cálculo aproximado del número π</li>
+                        <li>Principio de Arquímedes en hidrostática</li>
+                        <li>Método exhaustivo para calcular áreas y volúmenes</li>
+                        <li>Espiral de Arquímedes</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Principio de Arquímedes:</span>
+                        <p>Todo cuerpo sumergido en un fluido experimenta un empuje vertical hacia arriba igual al peso
+                          del fluido desalojado.</p>
+                        <div>
+                          \[ E = \rho_{\text{fluido}} \cdot V_{\text{sumergido}} \cdot g \]
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Fibonacci (Leonardo de Pisa) -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/pisano.jpg" alt="Leonardo de Pisa (Fibonacci)" class="mathematician-img">
+                    <h2>Leonardo de Pisa (Fibonacci)</h2>
+                    <p>1170-1250</p>
+                    <span class="era">Matemático Italiano Medieval</span>
+                    <p>Considerado el matemático más talentoso de la Edad Media. Contribuyó significativamente a la
+                      introducción del sistema numérico arábigo en Europa.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Introducción del sistema decimal en Europa occidental</li>
+                        <li>Secuencia de Fibonacci</li>
+                        <li>Libro "Liber Abaci" (1202)</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Secuencia de Fibonacci:</span>
+                        <p>Cada número es la suma de los dos anteriores, comenzando con 0 y 1.</p>
+                        <div>
+                          \[ F_0 = 0, F_1 = 1 \]
+                          \[ F_n = F_{n-1} + F_{n-2} \text{ para } n > 1 \]
+                          \[ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... \]
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+            
+                <!-- Hipatia de Alejandría -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/hipatia.jpg" alt="Hipatia de Alejandría" class="mathematician-img">
+                    <h2>Hipatia de Alejandría</h2>
+                    <p>370-415 d.C.</p>
+                    <span class="era">Matemática de la Antigua Grecia</span>
+                    <p>Primera mujer matemática documentada en la historia. Destacó como astrónoma, filósofa y líder de la
+                      escuela neoplatónica de Alejandría.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Comentarios sobre la "Aritmética" de Diofanto</li>
+                        <li>Invención del hidroscopio</li>
+                        <li>Edición del trabajo astronómico de Ptolomeo</li>
+                        <li>Perfeccionamiento del astrolabio y el hidrómetro</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- René Descartes -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/descartes.jpg" alt="René Descartes" class="mathematician-img">
+                    <h2>René Descartes</h2>
+                    <p>1596-1650</p>Filósofo Francés</span>
+                    <p>Filósofo, matemático y científico francés, considerado el padre de la geometría analítica y la
+                      filosofía moderna.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Invención de la geometría analítica</li>
+                        <li>Sistema de coordenadas cartesianas</li>
+                        <li>Notación algebraica moderna</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Ecuación de la recta en el plano cartesiano:</span>
+                        <div>
+                          \[ y = mx + b \]
+                        </div>
+                        <p>Donde m es la pendiente y b es la ordenada al origen.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Isaac Newton -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/newton.jpg" alt="Isaac Newton" class="mathematician-img">
+                    <h2>Isaac Newton</h2>
+                    <p>1643-1727</p>
+                    <span class="era">Matemático y Físico Inglés</span>
+                    <p>Uno de los científicos más influyentes de todos los tiempos. Sentó las bases del cálculo diferencial
+                      e integral y de la física clásica.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Desarrollo del cálculo infinitesimal</li>
+                        <li>Leyes del movimiento y gravitación universal</li>
+                        <li>Binomio de Newton</li>
+                        <li>Método de Newton para aproximación de raíces</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Ley de Gravitación Universal:</span>
+                        <div>
+                          \[ F = G \frac{m_1 m_2}{r^2} \]
+                        </div>
+                        <p>Donde G es la constante de gravitación universal.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Gottfried Wilhelm Leibniz -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/leibniz.jpg" alt="Gottfried Wilhelm Leibniz" class="mathematician-img">
+                    <h2>Gottfried Wilhelm Leibniz</h2>
+                    <p>1646-1716</p>
+                    <span class="era">Matemático y Filósofo Alemán</span>
+                    <p>Polímata alemán que desarrolló el cálculo de forma independiente a Newton. Contribuyó a la notación
+                      matemática moderna.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Desarrollo independiente del cálculo</li>
+                        <li>Notación diferencial actual (dx, dy)</li>
+                        <li>Sistema binario moderno</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Notación de Leibniz para derivadas:</span>
+                        <div>
+                          \[ \frac{d}{dx}f(x) \]
+                        </div>
+                        <span class="formula-title">Regla del producto:</span>
+                        <div>
+                          \[ \frac{d}{dx}[f(x)g(x)] = f(x)\frac{d}{dx}g(x) + g(x)\frac{d}{dx}f(x) \]
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Guillaume de l'Hôpital -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+                
+                    <img src="img/l hopital.jpg" alt="Guillaume de l'Hôpital" class="mathematician-img">
+                    <h2>Guillaume de l'Hôpital</h2>
+                    <p>1661-1704</p>
+                    <span class="era">Matemático Francés</span>
+                    <p>El más importante de sus logros es el descubrimiento de la regla de L'Hôpital, atribuido a su nombre, que se emplea para
+                    calcular el valor límite de una fracción donde numerador y denominador tienden a cero o ambos tienden al infinito.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Aportaciones al calculo</li>
+                        <li>La regla de l'Hôpital</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Regla de l'Hôpital:</span>
+                        <div>
+                          \[
+                          \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
+                          \]
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Leonhard Euler -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/euler.jpg" alt="Leonhard Euler" class="mathematician-img">
+                    <h2>Leonhard Euler</h2>
+                    <p>1707-1783</p>
+                    <span class="era">Matemático y Físico Suizo</span>
+                    <p>El matemático más prolífico de la historia. Sus contribuciones abarcan prácticamente todos los campos
+                      de las matemáticas.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Notación matemática moderna (e, i, π, f(x), Σ)</li>
+                        <li>Identidad de Euler</li>
+                        <li>Teoría de grafos (problema de los puentes de Königsberg)</li>
+                        <li>Número e y funciones exponenciales</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Identidad de Euler:</span>
+                        <div>
+                          \[ e^{i\pi} + 1 = 0 \]
+                        </div>
+                        <p>Esta ecuación relaciona cinco constantes fundamentales de las matemáticas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Sophie Germain -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/germain.jpg" alt="Sophie Germain" class="mathematician-img">
+                    <h2>Sophie Germain</h2>
+                    <p>1776-1831</p>
+                    <span class="era">Matemática Francesa</span>
+                    <p>Matemática autodidacta que realizó importantes contribuciones a la teoría de números y la teoría de
+                      la elasticidad.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Trabajo pionero en el último teorema de Fermat</li>
+                        <li>Números primos de Sophie Germain</li>
+                        <li>Teoría de la elasticidad</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Números Primos de Sophie Germain:</span>
+                        <p>Un primo p es un primo de Sophie </p>
+                        <p> Germain si 2p+1 también es primo.</p>
+            
+                        <p>Ejemplos: 2, 3, 5, 11, 23, 29, 41, 53, 83, 89, ...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Carl Friedrich Gauss -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/gauss.jpg" alt="Carl Friedrich Gauss" class="mathematician-img">
+                    <h2>Carl Friedrich Gauss</h2>
+                    <p>1777-1855</p>
+                    <span class="era">Matemático y Físico Alemán</span>
+                    <p>Considerado uno de los matemáticos más influyentes de la historia, llamado "el príncipe de las
+                      matemáticas".</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Teorema fundamental del álgebra</li>
+                        <li>Distribución normal (campana de Gauss)</li>
+                        <li>Método de mínimos cuadrados</li>
+                        <li>Teoría de números</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Distribución Normal (Gaussiana):</span>
+                        <div>
+                          \[ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2} \]
+                        </div>
+                        <p>Donde μ es la media y σ es la desviación estándar.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Siméon Denis Poisson -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/poisson.jpg" alt="Siméon Denis Poisson" class="mathematician-img">
+                    <h2>Siméon Denis Poisson</h2>
+                    <p>1781-1840</p>
+                    <span class="era">Fisico Matemático Frances</span>
+                    <p>Siméon Denis Poisson fue un físico y matemático francés al que se le conoce por sus diferentes trabajos en el
+                      campo de
+                      la electricidad y por sus publicaciones acerca de la geometría diferencial y la teoría de probabilidades.
+                    </p>
+            
+                    <div class="contributions">
+            
+                      <h3>Contribuciones Principales</h3>
+                      <ul>
+                        <li>Distribución de Poisson:</li>
+                        <li>Ecuación de Poisson:</li>
+                        <li>Mecánica analítica:</li>
+                        <li>Teoría de la probabilidad</li>
+                        <li>Física matemática</li>
+                      </ul>
+                    </div>
+            
+                  </div>
+                </div>
+            
+                <!-- Bernhard Riemann -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/riemman.jpg" alt="Bernhard Riemann" class="mathematician-img">
+                    <h2>Bernhard Riemann</h2>
+                    <p>1826-1866</p>
+                    <span class="era">Matemático Alemán</span>
+                    <p>Desarrolló la geometría riemanniana, fundamental para la teoría de la relatividad general de
+                      Einstein, y planteó la famosa hipótesis de Riemann.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Geometría no euclidiana (geometría riemanniana)</li>
+                        <li>Hipótesis de Riemann</li>
+                        <li>Integral de Riemann</li>
+                        <li>Superficie de Riemann</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Función Zeta de Riemann:</span>
+                        <div>
+                          \[ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} \]
+                        </div>
+                        <p>Hipótesis de Riemann: Todos los ceros no triviales de la función zeta tienen parte real igual
+                          a 1/2.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                  <!-- Gustav Jacobi -->
+                  <div class="mathematician">
+                    <div class="mathematician-content">
+                  
+                      <img src="img/Gustav Jacobi.jpg" alt="Gustav Jacobi" class="mathematician-img">
+                      <h2>Gustav Jacobi</h2>
+                      <p>1804-1851</p>
+                      <span class="era">Matemático Alemán</span>
+                      <p>Autor muy prolífico, contribuyó en varios campos de la matemática, principalmente en el área de las funciones
+                        elípticas,
+                        el álgebra, la teoría de números y las ecuaciones diferenciales.</p>
+                      <div class="contributions">
+                        <h3>Contribuciones Principales:</h3>
+                        <ul>
+                          <li>La derivada parcial </li>
+                  
+                        </ul>
+                        <div class="formula-container">
+                          <span class="formula-title">Formula de la derivada parcial:</span>
+                          <div>
+                            \[ \frac{\partial f}{\partial x} ; \frac{\partial f}{\partial y} ; \frac{\partial f}{\partial z} \]
+                          </div>
+                          <p>Toda funcion multivariable se deriva con respecto a una sola variable y las otras variables se tratan como
+                            constantes.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!--Brook Taylor -->
+                  <div class="mathematician">
+                    <div class="mathematician-content">
+                  
+                      <img src="img/Taylor.jpg" alt="Brook Taylor" class="mathematician-img">
+                      <h2>Brook Taylor</h2>
+                      <p>1685-1731</p>
+                      <span class="era">Matemático Britanico</span>
+                      <p>Fue un matemático británico, autor del teorema que lleva su nombre y de destacadas contribuciones al desarrollo
+                        del
+                        cálculo diferencial e integral.</p>
+                      <div class="contributions">
+                        <h3>Contribuciones Principales:</h3>
+                        <ul>
+                          <li>La serie de Taylor </li>
+                  
+                        </ul>
+                        <div class="formula-container">
+                          <span class="formula-title">La \textbf{serie de Taylor} de una función $f(x)$ infinitamente diferenciable en un
+                            entorno de $x = a$ está dada por:</span>
+                          <div>
+                            \[
+                            f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!} \, (x - a)^n
+                            = f(a) + f'(a)(x - a) + \frac{f''(a)}{2!}(x - a)^2 + \frac{f^{(3)}(a)}{3!}(x - a)^3 + \cdots
+                            \]
+                          </div>
+                          <p>Cuando $a = 0$, se obtiene la \textbf{serie de Maclaurin}:</p>
+                          <div>
+                            \[
+                            f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} \, x^n
+                            = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f^{(3)}(0)}{3!}x^3 + \cdots
+                            \]
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Laplace -->
+                  <div class="mathematician">
+                    <div class="mathematician-content">
+                  
+                      <img src="img/laplace.jpg" alt="Laplace" class="mathematician-img">
+                      <h2>Pierre-Simon Laplace</h2>
+                      <p>1749-1827</p>
+                      <span class="era">Astronomo Frances</span>
+                      <p>ue un astrónomo, físico, matemático y filósofo francés. Continuador de la mecánica newtoniana, hizo un gran
+                        aporte para
+                        el posterior descubrimiento de la transformada de Laplace</p>
+                      <div class="contributions">
+                        <h3>Contribuciones Principales:</h3>
+                        <ul>
+                          <li>Las transformadas de Laplace</li>
+                  
+                        </ul>
+                        <div class="formula-container">
+                          <span class="formula-title">La transformada de Laplace de una función $f(t)$ se define como:</span>
+                          <div>
+                            \[
+                            \mathcal{L}\{f(t)\} = F(s) = \int_{0}^{\infty} e^{-st} \, f(t) \, dt,
+                            \]
+                          </div>
+                          <p>donde $s \in \mathbb{C}$ es una variable compleja.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Fourier -->
+                  <div class="mathematician">
+                    <div class="mathematician-content">
+                  
+                      <img src="img/Fourier.jpg" alt="Fourier" class="mathematician-img">
+                      <h2>Joseph Fourier</h2>
+                      <p>1768-1830</p>
+                      <span class="era">Matemático Frances</span>
+                      <p>fue un matemático y físico francés conocido por sus trabajos sobre la descomposición de funciones periódicas en
+                        series
+                        trigonométricas convergentes llamadas Series de Fourier</p>
+                      <div class="contributions">
+                        <h3>Contribuciones Principales:</h3>
+                        <ul>
+                          <li>La Serie de Fourier</li>
+                  
+                        </ul>
+                        <div class="formula-container">
+                          <span class="formula-title">Formula:</span>
+                          <div>
+                            \[f(x) \sim \sum_{n=-\infty}^{\infty} c_n e^{i n x}\]
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Andrei Markov -->
+                  <div class="mathematician">
+                    <div class="mathematician-content">
+                  
+                      <img src="img/markov.jpg" alt="Andrei Markov" class="mathematician-img">
+                      <h2>Andrei Markov</h2>
+                      <p>1856-1922</p>
+                      <span class="era">Matemático Ruso</span>
+                      <p>comenzó su trabajo de máster sobre teoría de números (aproximación racional), una tesis que fue muy alabada y
+                        considerada uno de los mejores tratados sobre el tema en esa época</p>
+                      <div class="contributions">
+                        <h3>Contribuciones Principales:</h3>
+                        <ul>
+                          <li>Las Cadenas de Markov </li>
+                          <li>Procesos Estocasticos</li>
+                  
+                        </ul>
+                        <div class="formula-container">
+                          <span class="formula-title">La cadena de Markov:</span>
+                          <div>
+                            \[ P_{ij}^{(n)} = \mathbb{P}(X_{m+n} = j \mid X_m = i)
+                            = \sum_{k} P_{ik}^{(r)} \, P_{kj}^{(n-r)}, \quad 0 < r < n \] </div>
+                  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+            
+                <!-- Sofia Kovalevskaya -->
+                <div class="mathematician">
+                  <div class="mathematician-content">
+            
+                    <img src="img/kovalevskaya.jpg" alt="Sofia Kovalevskaya" class="mathematician-img">
+                    <h2>Sofia Kovalevskaya</h2>
+                    <p>1850-1891</p>
+                    <span class="era">Matemática Rusa</span>
+                    <p>Primera mujer en obtener un doctorado en matemáticas y primera profesora universitaria en Europa.
+                      Hizo contribuciones significativas al análisis y la mecánica.</p>
+                    <div class="contributions">
+                      <h3>Contribuciones Principales:</h3>
+                      <ul>
+                        <li>Teorema de Cauchy-Kovalevskaya sobre ecuaciones diferenciales</li>
+                        <li>Trabajo sobre la rotación de un cuerpo rígido</li>
+                        <li>Contribuciones a la teoría de ecuaciones diferenciales parciales</li>
+                      </ul>
+                      <div class="formula-container">
+                        <span class="formula-title">Teorema de Cauchy-Kovalevskaya:</span>
+                        <p>Asegura la existencia y unicidad de soluciones para ciertos tipos de ecuaciones diferenciales
+                          parciales.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Importancia de las Matemáticas</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>Las matemáticas tienen una importancia fundamental en nuestra sociedad y en el desarrollo científico y
+              tecnológico:</p>
+            <ul>
+              <li>Son el lenguaje de la ciencia y la tecnología.</li>
+              <li>Desarrollan el pensamiento lógico y la capacidad de resolución de problemas.</li>
+              <li>Permiten modelar fenómenos naturales y predecir comportamientos.</li>
+              <li>Son la base de avances en medicina, economía, ingeniería y prácticamente todas las áreas del
+                conocimiento.</li>
+              <li>Nos ayudan a comprender patrones y estructuras en el mundo que nos rodea.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="section-card">
+        <h2>1. Conceptos Preliminares</h2>
+        <p>Las matemáticas se construyen sobre una serie de elementos conceptuales que permiten desarrollar teorías
+          coherentes y robustas.</p>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Definición</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Definición</h4>
+              <p>Enunciado preciso que determina el significado de un concepto matemático, estableciendo sus
+                características esenciales y los límites de su aplicación.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Definición de número par:</strong> Un número entero \(n\) es par si y solo si existe un entero
+                \(k\) tal que \(n = 2k\).</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Propiedad</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Propiedad</h4>
+              <p>Característica o atributo que posee un objeto matemático y que puede ser demostrada a partir de
+                definiciones, axiomas o teoremas previos.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Propiedad conmutativa de la suma:</strong> Para cualesquiera números reales \(a\) y \(b\), se
+                cumple que \(a + b = b + a\).</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Teorema</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Teorema</h4>
+              <p>Proposición que puede ser demostrada como verdadera a partir de axiomas y/o otros teoremas ya
+                demostrados, siguiendo las reglas del razonamiento lógico.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Teorema de Pitágoras:</strong> La suma de los cuadrados de los catetos es igual al cuadrado de la
+                hipotenusa. Si \(a\) y \(b\) son los catetos y \(c\) es la hipotenusa, entonces \(a^2 + b^2 = c^2\).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Axioma</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Axioma</h4>
+              <p>Proposición que se admite y se confirma sin necesidad de demostracion.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Rectas Paralelas de Euclides:</strong> Por un punto exterior a una recta, pasa una y solo una recta paralela a la recta dada.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Teorema Inverso o Recíproco</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Teorema Inverso o Recíproco</h4>
+              <p>Proposición que se obtiene al intercambiar la hipótesis y la conclusión de un teorema. Si un teorema
+                tiene la forma "Si P, entonces Q", su recíproco es "Si Q, entonces P".</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Teorema:</strong> Si un polígono es un cuadrado, entonces tiene cuatro lados iguales.</p>
+              <p><strong>Recíproco:</strong> Si un polígono tiene cuatro lados iguales, entonces es un cuadrado. (Este
+                recíproco no es necesariamente verdadero, ya que podría ser un rombo).</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Postulado</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Postulado</h4>
+              <p>Proposición que se acepta como verdadera sin demostración, sirviendo como punto de partida para
+                desarrollar un sistema matemático.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Postulado de Euclides (Quinto postulado):</strong> Por un punto exterior a una recta, se puede
+                trazar una y solo una recta paralela a la recta dada.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Lema</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Lema</h4>
+              <p>Proposición demostrada que se utiliza como paso intermedio en la demostración de un teorema más
+                importante.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Lema de Bézout:</strong> Si \(a\) y \(b\) son enteros no ambos nulos, entonces existen enteros
+                \(s\) y \(t\) tales que \(as + bt = \gcd(a,b)\), donde \(\gcd(a,b)\) es el máximo común divisor de \(a\) y
+                \(b\).</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Corolario</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Corolario</h4>
+              <p>Proposición que se deduce fácilmente de un teorema ya demostrado y que representa una consecuencia
+                inmediata de este.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Teorema:</strong> Todo número primo mayor que 2 es impar.</p>
+              <p><strong>Corolario:</strong> Si un número es par y mayor que 2, entonces no es primo.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Escolio</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Escolio</h4>
+              <p>Nota o comentario explicativo que acompaña a un teorema o proposición para aclarar su significado o
+                implicaciones.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Teorema:</strong> La suma de los ángulos internos de un triángulo es 180 grados.</p>
+              <p><strong>Escolio:</strong> Este resultado es válido únicamente en geometría euclidiana. En geometrías no
+                euclidianas, como la geometría esférica o hiperbólica, la suma de los ángulos internos de un triángulo
+                puede ser mayor o menor que 180 grados, respectivamente.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Problema</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="concept-box">
+              <h4>Problema</h4>
+              <p>Situación que requiere una solución mediante la aplicación de principios matemáticos, siguiendo un
+                proceso lógico y estructurado.</p>
+            </div>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p><strong>Problema:</strong> Calcular el área de un círculo cuyo radio es 5 cm.</p>
+              <p><strong>Solución:</strong> Utilizando la fórmula del área del círculo \(A = \pi r^2\), tenemos \(A = \pi
+                \times 5^2 = 25\pi \approx 78.54\) cm².</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="section-card">
+        <h2>2. Alfabeto Griego</h2>
+        <p>El alfabeto griego es ampliamente utilizado en matemáticas y ciencias para representar variables, constantes y
+          otros elementos.</p>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Letras Mayúsculas</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="greek-grid">
+              <div class="greek-letter">
+                <div class="symbol">\(A\)</div>
+                <span>Alfa</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(B\)</div>
+                <span>Beta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Gamma\)</div>
+                <span>Gamma</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Delta\)</div>
+                <span>Delta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(E\)</div>
+                <span>Epsilon</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(Z\)</div>
+                <span>Zeta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(H\)</div>
+                <span>Eta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Theta\)</div>
+                <span>Theta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(I\)</div>
+                <span>Iota</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(K\)</div>
+                <span>Kappa</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Lambda\)</div>
+                <span>Lambda</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(M\)</div>
+                <span>Mu</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(N\)</div>
+                <span>Nu</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Xi\)</div>
+                <span>Xi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(O\)</div>
+                <span>Omicron</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Pi\)</div>
+                <span>Pi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(P\)</div>
+                <span>Rho</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Sigma\)</div>
+                <span>Sigma</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(T\)</div>
+                <span>Tau</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Upsilon\)</div>
+                <span>Upsilon</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Phi\)</div>
+                <span>Phi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(X\)</div>
+                <span>Chi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Psi\)</div>
+                <span>Psi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\Omega\)</div>
+                <span>Omega</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Letras Minúsculas</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <div class="greek-grid">
+              <div class="greek-letter">
+                <div class="symbol">\(\alpha\)</div>
+                <span>alfa</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\beta\)</div>
+                <span>beta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\gamma\)</div>
+                <span>gamma</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\delta\)</div>
+                <span>delta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\epsilon\)</div>
+                <span>epsilon</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\zeta\)</div>
+                <span>zeta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\eta\)</div>
+                <span>eta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\theta\)</div>
+                <span>theta</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\iota\)</div>
+                <span>iota</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\kappa\)</div>
+                <span>kappa</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\lambda\)</div>
+                <span>lambda</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\mu\)</div>
+                <span>mu</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\nu\)</div>
+                <span>nu</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\xi\)</div>
+                <span>xi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(o\)</div>
+                <span>omicron</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\pi\)</div>
+                <span>pi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\rho\)</div>
+                <span>rho</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\sigma\)</div>
+                <span>sigma</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\tau\)</div>
+                <span>tau</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\upsilon\)</div>
+                <span>upsilon</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\phi\)</div>
+                <span>phi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\chi\)</div>
+                <span>chi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\psi\)</div>
+                <span>psi</span>
+              </div>
+              <div class="greek-letter">
+                <div class="symbol">\(\omega\)</div>
+                <span>omega</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="section-card">
+        <h2>3. Lógica Matemática</h2>
+        <p>La lógica matemática es el estudio formal de la inferencia y los fundamentos de la matemática desde una
+          perspectiva matemática.</p>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Simbolización de Proposiciones</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>En lógica, una proposición es un enunciado que puede ser verdadero o falso, pero no ambos a la vez. Las
+              proposiciones se pueden representar mediante símbolos:</p>
+            <ul>
+              <li>\( p, q, r, ... \) - Letras minúsculas para representar proposiciones simples</li>
+              <li>\( \neg p \) - Negación de \(p\) ("no p")</li>
+              <li>\( p \wedge q \) - Conjunción de \(p\) y \(q\) ("p y q")</li>
+              <li>\( p \vee q \) - Disyunción de \(p\) y \(q\) ("p o q")</li>
+              <li>\( p \rightarrow q \) - Implicación ("si p, entonces q")</li>
+              <li>\( p \leftrightarrow q \) - Doble implicación o equivalencia ("p si y solo si q")</li>
+            </ul>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p>Sean:</p>
+              <p>\(p\): "Llueve"</p>
+              <p>\(q\): "Llevo paraguas"</p>
+              <p>Entonces:</p>
+              <p>\(\neg p\): "No llueve"</p>
+              <p>\(p \wedge q\): "Llueve y llevo paraguas"</p>
+              <p>\(p \rightarrow q\): "Si llueve, entonces llevo paraguas"</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Inferencia Lógica</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>La inferencia lógica es el proceso de derivar conclusiones a partir de premisas utilizando reglas de
+              deducción. Algunas reglas básicas de inferencia son:</p>
+            <ul>
+              <li><strong>Modus Ponens:</strong> De \(p\) y \(p \rightarrow q\), se infiere \(q\).</li>
+              <li><strong>Modus Tollens:</strong> De \(\neg q\) y \(p \rightarrow q\), se infiere \(\neg p\).</li>
+              <li><strong>Silogismo Hipotético:</strong> De \(p \rightarrow q\) y \(q \rightarrow r\), se infiere \(p
+                \rightarrow r\).</li>
+              <li><strong>Silogismo Disyuntivo:</strong> De \(p \vee q\) y \(\neg p\), se infiere \(q\).</li>
+            </ul>
+            <div class="example-box">
+              <h5>Ejemplo de Modus Ponens:</h5>
+              <p>Premisa 1: Si llueve, entonces la calle se moja. (\(p \rightarrow q\))</p>
+              <p>Premisa 2: Está lloviendo. (\(p\))</p>
+              <p>Conclusión: La calle está mojada. (\(q\))</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Silogismos</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>En lógica, un silogismo es un razonamiento deductivo formado por dos premisas y una conclusión. Por
+              ejemplo, de las premisas \(p \rightarrow q\) y \(q \rightarrow r\), se concluye \(p \rightarrow r\).</p>
+            <p>Los silogismos son una forma específica de argumento lógico que sigue un patrón definido. Están compuestos
+              por una premisa mayor, una premisa menor y una conclusión.</p>
+            <div class="example-box">
+              <h5>Ejemplo clásico:</h5>
+              <p>Premisa mayor: Todos los hombres son mortales. \(\forall x (H(x) \rightarrow M(x))\)</p>
+              <p>Premisa menor: Sócrates es un hombre. \(H(s)\)</p>
+              <p>Conclusión: Sócrates es mortal. \(M(s)\)</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Certeza, Verdad y Validez</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>En lógica, es importante distinguir entre estos tres conceptos:</p>
+            <ul>
+              <li><strong>Certeza:</strong> Estado mental de convencimiento acerca de una proposición.</li>
+              <li><strong>Verdad:</strong> Propiedad de una proposición que se corresponde con la realidad.</li>
+              <li><strong>Validez:</strong> Propiedad de un argumento donde, si todas las premisas son verdaderas, la
+                conclusión necesariamente también lo es.</li>
+            </ul>
+            <p>Es posible tener argumentos válidos con premisas falsas, o estar completamente convencido (tener certeza)
+              sobre algo que no es verdadero.</p>
+            <div class="example-box">
+              <h5>Ejemplo de Argumento Válido pero no Necesariamente Verdadero:</h5>
+              <p>Premisa 1: Todos los mamíferos pueden volar.</p>
+              <p>Premisa 2: Los humanos son mamíferos.</p>
+              <p>Conclusión: Los humanos pueden volar.</p>
+              <p><em>El argumento es válido (la forma lógica es correcta), pero no es sólido porque la premisa 1 es
+                  falsa.</em></p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Tablas de Verdad</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>Las tablas de verdad son herramientas que permiten analizar sistemáticamente el valor de verdad de
+              expresiones compuestas en función del valor de verdad de sus componentes.</p>
+  
+            <h5>Tabla de Verdad para la Negación (\(\neg p\))</h5>
+            <table class="truth-table">
+              <tr>
+                <th>\(p\)</th>
+                <th>\(\neg p\)</th>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>F</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>V</td>
+              </tr>
+            </table>
+  
+            <h5>Tabla de Verdad para la Conjunción (\(p \wedge q\))</h5>
+            <table class="truth-table">
+              <tr>
+                <th>\(p\)</th>
+                <th>\(q\)</th>
+                <th>\(p \wedge q\)</th>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+              </tr>
+            </table>
+  
+            <h5>Tabla de Verdad para la Disyunción (\(p \vee q\))</h5>
+            <table class="truth-table">
+              <tr>
+                <th>\(p\)</th>
+                <th>\(q\)</th>
+                <th>\(p \vee q\)</th>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+              </tr>
+            </table>
+  
+            <h5>Tabla de Verdad para la Implicación (\(p \rightarrow q\))</h5>
+            <table class="truth-table">
+              <tr>
+                <th>\(p\)</th>
+                <th>\(q\)</th>
+                <th>\(p \rightarrow q\)</th>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>V</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Términos, Predicados y Cuantificadores</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>En lógica de predicados, se extiende la lógica proposicional para incluir:</p>
+            <ul>
+              <li><strong>Términos:</strong> Representan objetos o entidades (constantes, variables o funciones aplicadas
+                a términos).</li>
+              <li><strong>Predicados:</strong> Expresan propiedades de los objetos o relaciones entre ellos.</li>
+              <li><strong>Cuantificadores:</strong> Especifican la cantidad de objetos que satisfacen cierta propiedad.
+              </li>
+            </ul>
+  
+            <h5>Cuantificadores principales:</h5>
+            <ul>
+              <li><strong>Cuantificador universal (\(\forall\)):</strong> "Para todo" o "Para cualquier"</li>
+              <li><strong>Cuantificador existencial (\(\exists\)):</strong> "Existe" o "Para algún"</li>
+            </ul>
+  
+            <div class="example-box">
+              <h5>Ejemplos:</h5>
+              <p>\(\forall x (H(x) \rightarrow M(x))\): "Todo humano es mortal"</p>
+              <p>Donde \(H(x)\) significa "x es humano" y \(M(x)\) significa "x es mortal".</p>
+              <p>\(\exists x (P(x) \wedge Q(x))\): "Existe al menos un x que tiene las propiedades P y Q"</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Especificación Universal</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>La especificación universal es una regla de inferencia que nos permite concluir que una propiedad se aplica
+              a un individuo específico si sabemos que se aplica a todos los individuos.</p>
+            <p>Formalmente, de \(\forall x P(x)\) podemos inferir \(P(a)\) para cualquier constante \(a\) en el dominio.
+            </p>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p>Premisa: Todos los planetas orbitan alrededor de una estrella. \(\forall x (P(x) \rightarrow O(x))\)</p>
+              <p>Donde \(P(x)\) es "x es un planeta" y \(O(x)\) es "x orbita alrededor de una estrella".</p>
+              <p>Aplicando la especificación universal:</p>
+              <p>Conclusión: La Tierra es un planeta, por lo tanto, la Tierra orbita alrededor de una estrella.
+                \(P(\text{Tierra}) \rightarrow O(\text{Tierra})\)</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Leyes de Identidad</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>Las leyes de identidad son principios fundamentales que gobiernan la igualdad en matemáticas:</p>
+            <ul>
+              <li><strong>Reflexividad:</strong> Todo objeto es igual a sí mismo. \(\forall x (x = x)\)</li>
+              <li><strong>Simetría:</strong> Si un objeto es igual a otro, entonces el segundo es igual al primero.
+                \(\forall x \forall y (x = y \rightarrow y = x)\)</li>
+              <li><strong>Transitividad:</strong> Si un objeto es igual a un segundo, y el segundo es igual a un tercero,
+                entonces el primero es igual al tercero. \(\forall x \forall y \forall z ((x = y \wedge y = z) \rightarrow
+                x = z)\)</li>
+              <li><strong>Sustitución:</strong> Si dos términos son iguales, entonces uno puede ser sustituido por el otro
+                en cualquier fórmula sin cambiar el valor de verdad de la fórmula.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="collapsible-section">
+          <div class="section-header">
+            <span>Sistema Matemático Simple</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="section-content">
+            <p>Un sistema matemático simple consta de elementos básicos como:</p>
+            <ul>
+              <li><strong>Axiomas:</strong> Verdades fundamentales que se aceptan sin demostración.</li>
+              <li><strong>Reglas de inferencia:</strong> Métodos para derivar nuevos teoremas a partir de axiomas o
+                teoremas previos.</li>
+              <li><strong>Definiciones:</strong> Especificaciones precisas de términos matemáticos.</li>
+            </ul>
+  
+            <h5>Ejemplo: Axiomas de la Adición en los Números Naturales</h5>
+            <ol>
+              <li>Axioma 1: \(\forall n \in \mathbb{N}, n + 0 = n\) (Elemento neutro)</li>
+              <li>Axioma 2: \(\forall m, n \in \mathbb{N}, m + S(n) = S(m + n)\) (Donde \(S(n)\) es el sucesor de \(n\))
+              </li>
+            </ol>
+  
+            <h5>Generalización Universal</h5>
+            <p>La generalización universal es una regla de inferencia que nos permite concluir que una propiedad se aplica
+              a todos los individuos si podemos demostrarla para un individuo arbitrario del dominio.</p>
+            <p>Formalmente, si podemos derivar \(P(x)\) para una variable \(x\) sin hacer suposiciones específicas sobre
+              \(x\), entonces podemos concluir \(\forall x P(x)\).</p>
+            <div class="example-box">
+              <h5>Ejemplo:</h5>
+              <p>Supongamos que queremos probar que todo número natural multiplicado por cero es igual a cero.</p>
+              <p>1. Sea \(n\) un número natural arbitrario.</p>
+              <p>2. Por definición de multiplicación por cero, \(n \times 0 = 0\).</p>
+              <p>3. Como no hicimos suposiciones específicas sobre \(n\), podemos concluir por generalización universal
+                que:</p>
+              <p>\(\forall n \in \mathbb{N}, n \times 0 = 0\)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h2>SigMATH</h2>
+            </div>
+            <p>Plataforma educativa dedicada a facilitar el aprendizaje y la enseñanza de las matemáticas a través
+              de recursos de calidad.</p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/share/12K8jJA2kHZ/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.threads.net/@polytechnicspider"><i class="fab fa-threads"></i></a>
+              <a href="https://www.instagram.com/polytechnicspider?igsh=MWZvdzJpbGtoeGkwNA=="><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@SigMATH-project"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="https://www.instagram.com/sigma.education.91?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Sigma Education MX</a></li>
+              <li><a href="https://sigma-91.github.io/Mathematik-Bibliothek-MX/">Mathematik Bibliothek MX</a></li>
+              <!-- Removed the "Encuestas" link -->
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Recursos</h3>
+            <ul class="footer-links">
+              <li><a href="https://youtube.com/@sigmath-project?si=1Tat_fQNVxn2WLLc">Videotutoriales</a></li>
+              <li><a href="../Calculadora Cientifica/calculadora.html">Calculadora Cientifica</a></li>
+              <li><a href="../Calculadora Grafica/graficadora.html">Calculadora Grafica</a></li>
+    
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul class="footer-links">
+              <li><i class="fas fa-envelope"></i> sigmathproject@gmail.com</li>
+              <li><i class="fas fa-phone"></i> +52 56 6136 1607</li>
+              <li><i class="fas fa-map-marker-alt"></i> Ciudad de Mexico, MX</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SigMATH - Todos los derechos reservados | Diseñado con <i class="fas fa-heart"
+              style="color: var(--accent);"></i> para amantes de las matemáticas</p>
+        </div>
+      </div>
+    </footer>
+  
+    <!-- Botón Scroll to Top -->
+    <div class="scroll-top" id="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script id="app-script">
+      document.addEventListener('DOMContentLoaded', function () {
+        const sectionHeaders = document.querySelectorAll('.section-header');
+
+        sectionHeaders.forEach(header => {
+          header.addEventListener('click', function () {
+            // Toggle active class on the header
+            this.classList.toggle('active');
+
+            // Toggle the content visibility
+            const content = this.nextElementSibling;
+            if (content.classList.contains('active')) {
+              content.classList.remove('active');
+              content.style.maxHeight = null;
+            } else {
+              content.classList.add('active');
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        });
+      });
+
+      // Botón Scroll to Top
+        const scrollTopBtn = document.getElementById('scroll-top');
+
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('active');
+          } else {
+            scrollTopBtn.classList.remove('active');
+          }
+        });
+
+        scrollTopBtn.addEventListener('click', function () {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+    </script>
+  </body>
+  </html>
+
+   
